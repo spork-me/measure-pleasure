@@ -60,4 +60,12 @@ describe('whatever Chad wants', () => {
       desc: 'buttered mayonaise peppers',
     })
   })
+
+  it('can', () => {
+    expect(app('1/3 can butter')).toEqual({
+      quantity: '1/3',
+      unit: 'Can',
+      desc: 'butter',
+    })
+  })
 })

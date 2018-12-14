@@ -8,6 +8,7 @@ const units = {
   tsp: 'TSP',
   teaspoon: 'TSP',
   teaspoons: 'TSP',
+  can: 'Can',
 }
 
 const getQuantity = (x) => {
