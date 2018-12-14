@@ -20,5 +20,9 @@
     "jest": "^23.6.0"
   },
   "dependencies": {},
-  "license": "ISC"
+  "license": "ISC",
+  "description": "measurement parser",
+  "repository": "git@github.com:spork-me/measure-pleasure.git",
+  "author": "Jeremy Greer <jex.grizzle@gmail.com>",
+  "private": false
 }

@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.com/spork-me/measure-pleasure.svg?branch=master)](https://travis-ci.com/spork-me/measure-pleasure)
 
+Meausurement parser inspired by @chadmmills.
 
 ## Usage
 
