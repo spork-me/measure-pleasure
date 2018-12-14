@@ -1,6 +1,16 @@
 # measure-pleasure
 
-[![Build Status](https://travis-ci.com/YOUR_NAME/{{PROJECT_NAME}}.svg?token=YOUR_TOKEN&branch=master)](https://travis-ci.com/YOUR_NAME/{{PROJECT_NAME}})
+[![Build Status](https://travis-ci.com/spork-me/measure-pleasure.svg?branch=master)](https://travis-ci.com/spork-me/measure-pleasure)
+
+
+## Usage
+
+```js
+import m from 'measure-pleasure'
+
+m('1 pound butter')
+// { quantity: '1', unit: 'LB', desc: 'butter' }
+```
 
 
 
