@@ -3,6 +3,7 @@ const Cup = 'Cup'
 const TSP = 'TSP'
 const Can = 'Can'
 const Pinch = 'Pinch'
+const Smidgeon = 'Smidgeon'
 
 const units = {
   pound: LB,
@@ -18,6 +19,7 @@ const units = {
   cans: Can,
   pinch: Pinch,
   pinches: Pinch,
+  smidgeons: Smidgeon,
 }
 
 const getQuantity = (x) => {

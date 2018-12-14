@@ -88,4 +88,12 @@ describe('whatever Chad wants', () => {
       desc: 'butter',
     })
   })
+
+  it('smidgeon', () => {
+    expect(app('3.1416 smidgeons deer intestine squish')).toEqual({
+      quantity: '3.1416',
+      unit: 'Smidgeon',
+      desc: 'deer intestine squish',
+    })
+  })
 })
