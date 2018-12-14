@@ -1,17 +1,30 @@
+const units = {
+  'pound': 'LB',
+  'pounds': 'LB',
+  'lb': 'LB',
+  'lbs': 'LB',
+  'cup': 'Cup',
+  'cups': 'Cup',
+}
+
 const getQuantity = (x) => {
-  return '1'
+  return x[1]
 }
 
 const getUnit = (x) => {
-  return 'LB'
+  return units[x[2].toLowerCase()]
 }
 
 const getDesc = (x) => {
-  return 'butter'
+  return x[3]
 }
 
+const unitsClause = Object.keys(units).join('|')
+const r = new RegExp(`(.+) +(${unitsClause}) +(.+)`, 'gi')
+
 export default (input) => {
-  const r = (/(.+) +(pound) +(.+)/)
+  r.lastIndex = 0
+
   const match = r.exec(input)
   if (match) {
     return {
