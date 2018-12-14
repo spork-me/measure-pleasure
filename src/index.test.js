@@ -89,11 +89,23 @@ describe('whatever Chad wants', () => {
     })
   })
 
-  it('smidgeon', () => {
-    expect(app('3.1416 smidgeons deer intestine squish')).toEqual({
-      quantity: '3.1416',
-      unit: 'Smidgeon',
-      desc: 'deer intestine squish',
+  it('oz', () => {
+    expect(app('40 oz of freedom')).toEqual({
+      quantity: '40',
+      unit: 'OZ',
+      desc: 'freedom',
+    })
+
+    expect(app('40 ounces cashew milk weed')).toEqual({
+      quantity: '40',
+      unit: 'OZ',
+      desc: 'cashew milk weed',
+    })
+
+    expect(app('1 ounce tears')).toEqual({
+      quantity: '1',
+      unit: 'OZ',
+      desc: 'tears',
     })
   })
 })

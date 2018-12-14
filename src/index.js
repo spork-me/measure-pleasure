@@ -3,7 +3,7 @@ const Cup = 'Cup'
 const TSP = 'TSP'
 const Can = 'Can'
 const Pinch = 'Pinch'
-const Smidgeon = 'Smidgeon'
+const OZ = 'OZ'
 
 const units = {
   pound: LB,
@@ -19,7 +19,9 @@ const units = {
   cans: Can,
   pinch: Pinch,
   pinches: Pinch,
-  smidgeons: Smidgeon,
+  oz: OZ,
+  ounce: OZ,
+  ounces: OZ,
 }
 
 const getQuantity = (x) => {
@@ -31,7 +33,7 @@ const getUnit = (x) => {
 }
 
 const getDesc = (x) => {
-  return x[3]
+  return x[3].replace(/of /i, '')
 }
 
 const unitsClause = Object.keys(units).join('|')
