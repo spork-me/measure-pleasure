@@ -67,5 +67,25 @@ describe('whatever Chad wants', () => {
       unit: 'Can',
       desc: 'butter',
     })
+
+    expect(app('993 CaNs butter')).toEqual({
+      quantity: '993',
+      unit: 'Can',
+      desc: 'butter',
+    })
+  })
+
+  it('pinch', () => {
+    expect(app('1/3 pinch butter')).toEqual({
+      quantity: '1/3',
+      unit: 'Pinch',
+      desc: 'butter',
+    })
+
+    expect(app('seventeen pinches butter')).toEqual({
+      quantity: 'seventeen',
+      unit: 'Pinch',
+      desc: 'butter',
+    })
   })
 })

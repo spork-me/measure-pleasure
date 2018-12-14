@@ -1,14 +1,23 @@
+const LB = 'LB'
+const Cup = 'Cup'
+const TSP = 'TSP'
+const Can = 'Can'
+const Pinch = 'Pinch'
+
 const units = {
-  pound: 'LB',
-  pounds: 'LB',
-  lb: 'LB',
-  lbs: 'LB',
-  cup: 'Cup',
-  cups: 'Cup',
-  tsp: 'TSP',
-  teaspoon: 'TSP',
-  teaspoons: 'TSP',
-  can: 'Can',
+  pound: LB,
+  pounds: LB,
+  lb: LB,
+  lbs: LB,
+  cup: Cup,
+  cups: Cup,
+  tsp: TSP,
+  teaspoon: TSP,
+  teaspoons: TSP,
+  can: Can,
+  cans: Can,
+  pinch: Pinch,
+  pinches: Pinch,
 }
 
 const getQuantity = (x) => {
