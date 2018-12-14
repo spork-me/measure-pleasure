@@ -1,10 +1,13 @@
 const units = {
-  'pound': 'LB',
-  'pounds': 'LB',
-  'lb': 'LB',
-  'lbs': 'LB',
-  'cup': 'Cup',
-  'cups': 'Cup',
+  pound: 'LB',
+  pounds: 'LB',
+  lb: 'LB',
+  lbs: 'LB',
+  cup: 'Cup',
+  cups: 'Cup',
+  tsp: 'TSP',
+  teaspoon: 'TSP',
+  teaspoons: 'TSP',
 }
 
 const getQuantity = (x) => {
@@ -24,7 +27,6 @@ const r = new RegExp(`(.+) +(${unitsClause}) +(.+)`, 'gi')
 
 export default (input) => {
   r.lastIndex = 0
-
   const match = r.exec(input)
   if (match) {
     return {

@@ -40,4 +40,24 @@ describe('whatever Chad wants', () => {
       desc: 'buttered mayonaise peppers',
     })
   })
+
+  it('teaspoons', () => {
+    expect(app('1 tsp butter')).toEqual({
+      quantity: '1',
+      unit: 'TSP',
+      desc: 'butter',
+    })
+
+    expect(app('half teaspoon butter')).toEqual({
+      quantity: 'half',
+      unit: 'TSP',
+      desc: 'butter',
+    })
+
+    expect(app('333 teaspoons buttered mayonaise peppers')).toEqual({
+      quantity: '333',
+      unit: 'TSP',
+      desc: 'buttered mayonaise peppers',
+    })
+  })
 })
