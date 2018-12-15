@@ -4,6 +4,12 @@
 
 Meausurement parser inspired by @chadmmills.
 
+## Installation
+
+```sh
+yarn add @fork-me/measure-pleasure
+```
+
 ## Usage
 
 ```js
