@@ -1,6 +1,12 @@
 {
   "version": "1.0.0",
-  "name": "measure-pleasure",
+  "name": "@spork-me/measure-pleasure",
+  "description": "measurement parser",
+  "keywords": [
+    "cooking",
+    "measurement",
+    "parser"
+  ],
   "main": "lib/index.js",
   "scripts": {
     "start": "babel-node src/index.js",
@@ -21,7 +27,6 @@
   },
   "dependencies": {},
   "license": "ISC",
-  "description": "measurement parser",
   "repository": "git@github.com:spork-me/measure-pleasure.git",
   "author": "Jeremy Greer <jex.grizzle@gmail.com>",
   "private": false
